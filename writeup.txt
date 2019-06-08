@@ -1,0 +1,12 @@
+In the following code, I have used BeautifulSoup module for scraping.
+For text-to-speech conversion I have used gTTS module.
+
+The code on execution asks for the word to be searched on wikipedia. Now for the wikipedia page of that term, if only single reference exists, the code outputs 
+the complete wikipedia article. It then converts the article to an audio file and save it in the same directory as code. Then it asks for the word to be searched for
+in that article and returns the number of times that word occurs in the article.
+
+In case multiple refernces exist for that term, the code outputs all the refrences and asks the user which particular refrence you want to read by the number of that
+refrence. It then outputs that article and then processes as the previous case of single refrence
+
+Note: the word count search is case insensitive as it should be.
+Also the article is split by whitespaces and then the word is searched hence it returns only the complete occurances of the word.
